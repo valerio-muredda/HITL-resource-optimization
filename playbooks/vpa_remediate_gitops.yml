@@ -10,7 +10,7 @@
     snow_user: "{{ lookup('env', 'SN_USERNAME') }}"
     snow_password: "{{ lookup('env', 'SN_PASSWORD') }}"
     github_repo_owner: "valerio-muredda"
-    github_repo_name: "test-auto"
+    github_repo_name: "HITL-resource-optimization"
     github_repo_url: "https://github.com/{{ github_repo_owner }}/{{ github_repo_name }}.git"
     manifest_rel_path: "manifests/{{ app_name | default('stress-app') }}/deployment.yaml"
     correlation_id: "vpa-rightsizing:{{ alert_namespace }}:{{ alert_container | default('') }}:{{ alert_name | default('') }}"
